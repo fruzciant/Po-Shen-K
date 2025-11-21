@@ -61,7 +61,7 @@ Esta derivación es más intuitiva que memorizar la fórmula cuadrática tradici
 **Solución:** x₁ = 3, x₂ = 2
 
 ### Ejemplo 2: Raíces complejas
-**Ecuación:** x² + 2x + 5 = 0  
+**Ecuación:** $ x² + 2x + 5 = 0 $ 
 **Solución:** x₁ = -1 + 2i, x₂ = -1 - 2i
 
 ### Ejemplo 3: Raíz doble
