@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Po-Shen K - Calculadora de Ecuaciones Cuadráticas</title>
+    <meta name="description" content="Calculadora de ecuaciones cuadráticas usando el método de Po-Shen Loh. Muestra raíces reales y complejas con pasos educativos.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Po-Shen K</h1>
+            <p class="subtitle">Calculadora de Ecuaciones Cuadráticas</p>
+            <p class="description">Método de Po-Shen Loh para resolver ecuaciones de segundo grado</p>
+        </header>
+
+        <div class="card input-card">
+            <h2 class="card-title">Ingresa los coeficientes</h2>
+            <p class="equation-display">
+                <span id="display-a">a</span>x² + <span id="display-b">b</span>x + <span id="display-c">c</span> = 0
+            </p>
+            
+            <form id="quadratic-form" class="form">
+                <div class="form-group">
+                    <label for="coeff-a">Coeficiente a:</label>
+                    <input type="number" id="coeff-a" step="any" value="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="coeff-b">Coeficiente b:</label>
+                    <input type="number" id="coeff-b" step="any" value="-5" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="coeff-c">Coeficiente c:</label>
+                    <input type="number" id="coeff-c" step="any" value="6" required>
+                </div>
+                
+                <button type="submit" class="btn-primary">
+                    <span>Calcular</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div id="results-section" class="results-section hidden">
+            <div class="card results-card">
+                <h2 class="card-title">Solución</h2>
+                <div id="roots-display" class="roots-display"></div>
+            </div>
+
+            <div class="card steps-card">
+                <h2 class="card-title">Pasos del Método de Po-Shen Loh</h2>
+                <div id="steps-display" class="steps-display"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="info-card">
+                <h3>¿Qué es el método de Po-Shen Loh?</h3>
+                <p>
+                    El método de Po-Shen Loh es un enfoque intuitivo para resolver ecuaciones cuadráticas.
+                    En lugar de memorizar fórmulas, este método se basa en las fórmulas de Vieta y la
+                    geometría de las raíces. Para una ecuación <strong>x² + bx + c = 0</strong>, las raíces
+                    se expresan como <strong>x = -b/2 ± u</strong>, donde <strong>u</strong> se calcula de
+                    forma natural a partir de la relación entre las raíces.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
